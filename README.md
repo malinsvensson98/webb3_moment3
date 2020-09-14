@@ -19,7 +19,6 @@ webbplats uppdaterad automatiskt då förändringar sker. De jag använt är fö
 • "gulp-concat-css": Konkatinerar CSS-filerna.
 • "gulp-imagemin": Optimerar mina bilder.
 • "gulp-uglify-es": Minifierar JS-filerna.
-
 ```
 ***
 
