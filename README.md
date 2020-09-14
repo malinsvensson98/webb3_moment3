@@ -3,7 +3,7 @@
 #### 1. Vad är syftet med automatiserings-processen? 
 
 Syftet är att skapa en snabbare utvecklingsprocess.
-Autiomatiserings-processen bidrar till att 
+Autiomatiserings-processen bidrar till att filstorlekarna blir mindre, bilderna optimeras och allt samlas tillsammans i en publicerings-katalog utan att utvecklaren behöver genomföra dessa stegen manuellt. Således blir utvecklingen både mer effektiv men även mindre upprepande då delar som utvecklaren annars skulle gjort själv körs automatiskt. 
 
 ***
 
