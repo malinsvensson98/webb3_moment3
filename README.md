@@ -1,13 +1,13 @@
 # Webbutveckling 3 - moment 2
 
-## 1. Vad är syftet med automatiserings-processen? 
+#### 1. Vad är syftet med automatiserings-processen? 
 
 Syftet är att skapa en snabbare utvecklingsprocess.
 Autiomatiserings-processen bidrar till att 
 
 ***
 
- ## 2. Vilka paket och verktyg har du använt och varför? 
+ #### 2. Vilka paket och verktyg har du använt och varför? 
 Jag har använt paket för att minifiera filer, för att kopiera filer samt för att hålla min 
 webbplats uppdaterad automatiskt då förändringar sker. De jag använt är följande: 
 
@@ -22,7 +22,7 @@ webbplats uppdaterad automatiskt då förändringar sker. De jag använt är fö
 ```
 ***
 
-## 3. Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår. 
+#### 3. Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår. 
 *För att använda dig av systemet behöver du ha node.js samt npm installerat på datorn* 
 
  För att använda det skapade systemet börjar användarn med att öppna upp terminalen fristående eller genom tillexempel visual studio code. Navigera dig sedan fram till platsen som du vill spara mappen med systemet i, tillexempel skrivbord. 
