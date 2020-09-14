@@ -28,7 +28,7 @@ Tillsist så kollade jag igenom hur paketen används för att säkerställa att 
 #### 3. Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår. 
 *För att använda dig av systemet behöver du ha node.js samt npm installerat på datorn* 
 
-För att använda det skapade systemet börjar användaren med att öppna upp terminalen fristående eller genom tillexempel visual studio code. Navigera dig sedan fram till platsen som du vill spara mappen med systemet i, tillexempel skrivbord (desktop). 
+För att använda det skapade systemet börjar användaren med att öppna upp terminalen fristående eller genom tillexempel visual studio code. Därefter ska användaren navigera sig fram till platsen som mappen med systemet i ska sparas på, tillexempel skrivbord (desktop). 
 ```
 cd desktop 
 ```
