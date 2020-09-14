@@ -31,9 +31,17 @@ cd desktop
 ```
 Därefter används följande kommando för att hämta system-mappen
 ```
-git clone --- 
+git clone https://github.com/malinsvensson98/Webb3_moment2.git 
 ```
 Användaren har därefter laddat ned filerna och kan därefter öppna upp dessa i valfri kodeditor, tillexempel det tidigare nämnda visual studio code. 
+För att sedan installera alla paket som krävs så används 
+```
+npm install 
+```
+och då detta är installerat kan användaren starta systemet genom att skriva
+```
+gulp 
+
 
 
 
