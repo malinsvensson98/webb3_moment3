@@ -22,10 +22,18 @@ webbplats uppdaterad automatiskt då förändringar sker. De jag använt är fö
 ***
 
 ##### 3. Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår. 
+* För att använda dig av systemet behöver du ha node.js samt npm installerat på datorn * 
 
- För att använda det skapade systemet börjar användarn med att öppna upp terminalen fristående eller genom tillexempel visual studio code. 
-2. Utvecklaren behöver vara säker på att git och 
-3. Därefter navigerar utvecklaren sig fram till tillexempel skrivbord genom "cd desktop". 
-3. Efter detta 
+ För att använda det skapade systemet börjar användarn med att öppna upp terminalen fristående eller genom tillexempel visual studio code. Navigera dig sedan fram till platsen som du vill spara mappen med systemet i, tillexempel skrivbord. 
+```
+cd desktop 
+```
+Därefter används följande kommando för att hämta system-mappen
+```
+git clone --- 
+```
+Användaren har därefter laddat ned filerna och kan därefter öppna upp dessa i valfri kodeditor, tillexempel det tidigare nämnda visual studio code. 
+
+
 
 
