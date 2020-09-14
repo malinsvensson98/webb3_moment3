@@ -52,7 +52,7 @@ Till mappen flyttas alla skapade html-filer, bilder, css-filer samt JavaScript-f
 Systemet innehåller även den tidigare nämnda "watcher" som hela tiden håller koll på om förändringar görs. Detta innebär att utvecklaren kan justera filerna som ligger i "src-mappen", det vill säga filer under redigering och under tiden utvecklaren gör detta så överförs även justeringarna till pub-mappen. 
 Med hjälp av browser-sync så genomförs en live-reload vilket gör så att webbplatsen som skapas hela tiden även uppdateras med de nya filerna som ligger i pub. 
 
-# Samanfattning av tasks som genomförs: 
+#### Samanfattning av tasks som genomförs: 
  ```
  htmlTask: Kopierar och flyttar över html-filerna till pub-mappen. 
  jsTask: Konkantenerar alla js-filer och skapar en enda, minifierar koden och flyttar detta till pub. 
