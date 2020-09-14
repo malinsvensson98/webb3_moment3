@@ -3,7 +3,6 @@
 Svar: Syftet är att skapa en snabbare utvecklingsprocess.
 Autiomatiserings-processen bidrar till att 
 
-´´´
 
 
 
