@@ -3,6 +3,7 @@
 Svar: Syftet är att skapa en snabbare utvecklingsprocess.
 Autiomatiserings-processen bidrar till att 
 
+***
 
 
 
@@ -18,7 +19,7 @@ webbplats uppdaterad automatiskt då förändringar sker. De jag använt är fö
 "gulp-imagemin": Optimerar mina bilder.
 "gulp-uglify-es": Minifierar JS-filerna.
 
-
+***
 
 3. Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår. 
 Svar: För att starta systemet skriver användaren "gulp". 
