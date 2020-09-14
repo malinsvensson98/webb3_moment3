@@ -3,7 +3,11 @@
 Svar: Syftet är att skapa en snabbare utvecklingsprocess.
 Autiomatiserings-processen bidrar till att 
 
-
+```
+git status
+git add
+git commit
+```
 
 
 2. Vilka paket och verktyg har du använt och varför? 
