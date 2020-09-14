@@ -46,5 +46,6 @@ Det som sker då kommandot används är att en ny mapp vid namn "pub" skapas.
 Denna mappen är till för att innehålla alla "färdiga" filer som sedan ska laddas upp. 
 Till mappen flyttas alla skapade html-filer, bilder, css-filer samt JavaScript-filer upp och innan dem hamnar där går dem igenom en process där allting minimeras/optimeras och om det finns flera filer, tillexempel två skilda css-filer så slås dem samman. 
 
+Systemet innehåller även den tidigare nämnda "watcher" som hela tiden håller koll på om förändringar görs och med hjälp av browser-sync så genomförs en live-reload som gör så att webbplatsen hela tiden även uppdateras med de nya filerna som ligger i pub. 
 
 
