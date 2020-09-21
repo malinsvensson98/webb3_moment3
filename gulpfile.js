@@ -6,6 +6,8 @@ const cssConcat = require('gulp-concat-css');
 const cssUglify = require("gulp-clean-css");
 const imageOptimize = require('gulp-imagemin'); // Minifiera bilder
 const browserSync = require('browser-sync').create(); // Live-reload
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 
 
 // Sökvägarna (html, css och js)
@@ -13,7 +15,8 @@ const files = {
     htmlPath: "src/**/*.html",
     imagePath: "src/images/*",
     cssPath: "src/**/*.css",
-    jsPath: "src/**/*.js"
+    jsPath: "src/**/*.js",
+    sassPath: "src/sass/**/*.scss"
 }
 
 // Kopiera HTML-filer (task)
@@ -31,12 +34,19 @@ function jsTask() {
         .pipe(dest('pub/js')); // Filen blir skriven 
 };
 
+/*
 // CSS-task 
 function cssTask() {
     return src(files.cssPath)
         .pipe(cssConcat('styles.css'))
         .pipe(cssUglify()) // Minifiera
         .pipe(dest('pub/css'));
+}*/
+
+function sassTask() {
+    return src(files.sassPath)
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(dest("pub/css"))
 }
 
 // Image-task 
@@ -56,15 +66,15 @@ function updateBrowser() {
     });
 
     // Watcher
-    watch([files.htmlPath, files.jsPath, files.cssPath, files.imagePath],
-        parallel(htmlTask, jsTask, cssTask, imageTask));
+    watch([files.htmlPath, files.jsPath, files.cssPath, files.imagePath, files.sassPath],
+        parallel(htmlTask, jsTask, imageTask, sassTask));
 
-    watch(['pub/js', 'pub/css', 'pub', 'pub/img']).on('change', browserSync.reload)
+    watch(['pub/js', 'pub/css', 'pub', 'pub/img', 'pub/sass']).on('change', browserSync.reload)
 }
 
 
 // Serie för att allt ska kopieras från start, default task
 exports.default = series(
-    parallel(htmlTask, jsTask, cssTask, imageTask), //Kör dem parallelt 
+    parallel(htmlTask, jsTask, imageTask, sassTask), //Kör dem parallelt 
     updateBrowser, updateBrowser
 );
