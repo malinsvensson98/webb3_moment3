@@ -1,0 +1,63 @@
+// Header
+header {
+    text-align: center;
+    margin-top: 3%;
+    img {
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        max-width: 350px;
+    }
+}
+
+// Huvuddel av sidan
+body {
+    font-family: $font-stack;
+    background-color: $base-color;
+}
+
+// Huvud-container
+.container {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    @include shadow();
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 2%;
+    bottom: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    a {
+        color: white;
+    }
+}
+
+// Första delen av container
+.firstbox {
+    @include boxes;
+    line-height: 150%;
+    h1 {
+        margin-bottom: 1%;
+    }
+}
+
+// Andra delen av container
+.seccondbox {
+    @include boxes($dark: true);
+    img {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+// Tredje delen av container
+.thirdbox {
+    @extend .firstbox;
+}

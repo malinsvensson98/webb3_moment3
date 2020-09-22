@@ -46,7 +46,7 @@ function cssTask() {
 function sassTask() {
     return src(files.sassPath)
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(dest("pub/css"))
+        .pipe(dest("pub/css"), dest("src/css"))
 }
 
 // Image-task 
